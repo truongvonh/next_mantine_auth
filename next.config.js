@@ -5,6 +5,7 @@ const nextConfig = {
     API_ENDPOINT: process.env.API_ENDPOINT,
     OKTA_DOMAIN_AUTH: process.env.OKTA_DOMAIN_AUTH,
     OKTA_CLIENT_ID: process.env.OKTA_CLIENT_ID,
+    APP_DOMAIN: process.env.APP_DOMAIN,
   },
 };
 

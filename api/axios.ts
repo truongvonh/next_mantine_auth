@@ -1,4 +1,4 @@
-import localStorageEnums from '@common/constants/localStorage.enums';
+import { LocalStorageEnum } from '@common/constants/localStorage.enums';
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { StatusCodes } from 'http-status-codes';
 
@@ -9,7 +9,7 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config: AxiosRequestConfig) => {
-    const accessToken = localStorage.getItem(localStorageEnums.AccessToken);
+    const accessToken = localStorage.getItem(LocalStorageEnum.AccessToken);
     if (accessToken) {
       const headers = {
         Authorization: `Bearer ${accessToken}`,

@@ -23,8 +23,14 @@
       "@features/*": [
         "features/*"
       ],
+      "@libs/*": [
+        "libs/*"
+      ],
       "@common/*": [
         "common/*"
+      ],
+      "@styles/*": [
+        "styles/*"
       ],
       "@components/*": [
         "components/*"
