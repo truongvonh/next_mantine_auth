@@ -1,3 +1,3 @@
-export default enum LocalStorageEnum {
-	AccessToken = 'AccessToken'
+export enum LocalStorageEnum {
+	AccessToken = 'AccessToken',
 }
