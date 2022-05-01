@@ -1,15 +1,14 @@
 import type { NextPage } from 'next';
 import styles from '../styles/Home.module.css';
+import AuthFeature from '@features/Auth';
 import MainPageLayout from '@layouts/PageWrapper';
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
+  const { locale, locales, asPath } = useRouter();
   return (
-    <MainPageLayout>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
+    <MainPageLayout title="Nextjs the login page!">
+      <AuthFeature />
     </MainPageLayout>
   );
 };
